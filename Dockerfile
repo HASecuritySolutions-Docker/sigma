@@ -10,4 +10,4 @@ RUN apk --update upgrade && \
     pip3 install -r sigma/tools/requirements.txt
     
 WORKDIR /sigma
-ENTRYPOINT ["/opt/elastalert/run.sh"]
+CMD ["python3 /sigma/tools/sigmac"]
