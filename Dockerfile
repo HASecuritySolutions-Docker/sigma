@@ -10,4 +10,4 @@ RUN git clone https://github.com/Neo23x0/sigma.git
 RUN pip3 install -r /sigma/tools/requirements.txt
     
 WORKDIR /sigma
-CMD ["python3 /sigma/tools/sigmac"]
+CMD ["python3", "/sigma/tools/sigmac"]
